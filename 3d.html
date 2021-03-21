@@ -1,0 +1,149 @@
+<html>
+<head>
+    <title>3D Art - Archcannon</title>
+    <link rel="stylesheet" href="archcannon.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body onload="init()">
+    <div id="front">
+        <img id="logo" src="Archcannon.png" />
+        <div class="fadein">
+            <hr class="bar" />
+            <div style="background-color:lightgray;">
+                <h1 id="title">3D Art</h1>
+            </div>
+            <div style=" background-color: rgb(225, 225, 225);">
+
+                <hr class="bar" />
+                <p id="itemsDesc">
+                    I began practicing 3D modeling with Blender in 2015. Most of my models are abstract spacecraft originally inspired by the game Transcendence by George Moromisato.
+                </p>
+                <div id="items">
+
+                    <script type="text/javascript">
+                        console.log(1);
+                        function animate(img) {
+                            let src = img.src;
+                            let nextSrc = src.replace('.png', '.gif');
+
+                            console.log(nextSrc);
+
+                            let i = new Image();
+
+                            i.onload = () => {
+
+                                img.src = nextSrc;
+                            };
+                            i.src = nextSrc;
+                            
+                        }
+
+                        function deanimate(img) {
+                            console.log(1);
+                            img.src = img.src.replace('.gif', '.png');
+                        }
+
+                        function init() {
+
+                            let imgs = document.getElementById('items').getElementsByTagName('img');
+                            console.log(imgs);
+                            console.log(imgs.length);
+                            for (let i = 0; i < imgs.length; i++) {
+                                let img = imgs[i];
+                                console.log(img);
+                                img.onmouseenter = () => animate(img);
+                                img.onmouseleave = () => deanimate(img);
+                            }
+                        }
+                    </script>
+                    <div>
+                        <h2>Amethyst</h2>
+                        <img src="3d/Amethyst.png"/>
+                    </div>
+
+
+                    <div>
+                        <h2>Athena</h2>
+                        <img src="3d/Athena.png" />
+                    </div>
+                    <div>
+                        <h2>Bunker</h2>
+                        <img src="3d/Bunker.png" />
+                    </div>
+                    <div>
+                        <h2>Centauri</h2>
+                        <img src="3d/Centauri.png" />
+                    </div>
+                    <div>
+                        <h2>Clock Tower</h2>
+                        <img src="3d/Clock Tower.png" />
+                    </div>
+                    <div>
+                        <h2>Compound</h2>
+                        <img src="3d/Compound.png" />
+                    </div>
+                    <div>
+                        <h2>Daughters</h2>
+                        <img src="3d/Daughters.png" />
+                    </div>
+                    <div>
+                        <h2>Gaian</h2>
+                        <img src="3d/Gaian.png" />
+                    </div>
+                    <div>
+                        <h2>Knight-Errant</h2>
+                        <img src="3d/KnightErrant.png" />
+                    </div>
+                    <div>
+                        <h2>Lightspeed II</h2>
+                        <img src="3d/LightspeedII.png" />
+                    </div>
+                    <div>
+                        <h2>Lightspeed III</h2>
+                        <img src="3d/LightspeedIII.png" />
+                    </div>
+                    <div>
+                        <h2>Meteor</h2>
+                        <img src="3d/Meteor.png" />
+                    </div>
+                    <div>
+                        <h2>Penumbra</h2>
+                        <img src="3d/Penumbra.png" />
+                    </div>
+                    <div>
+                        <h2>Royal Guard</h2>
+                        <img src="3d/RoyalGuard.png" />
+                    </div>
+                    <div>
+                        <h2>Royal Queen</h2>
+                        <img src="3d/RoyalQueen.png" />
+                    </div>
+                    <div>
+                        <h2>Royal King</h2>
+                        <img src="3d/RoyalKing.png" />
+                    </div>
+                    <div>
+                        <h2>Spear</h2>
+                        <img src="3d/Spear.png" />
+                    </div>
+                    <div>
+                        <h2>Stronghold</h2>
+                        <img src="3d/Stronghold.png" />
+                    </div>
+                    <div>
+                        <h2>Tower</h2>
+                        <img src="3d/Tower.png" />
+                    </div>
+                    <div>
+                        <h2>Trident</h2>
+                        <img src="3d/Trident.png" />
+                    </div>
+                    <div>
+                        <h2>Vulture</h2>
+                        <img src="3d/Vulture.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
