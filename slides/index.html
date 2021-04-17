@@ -1,0 +1,55 @@
+<head>
+    <style>
+        * {
+            font-family:'IBM Plex Mono';
+        }
+        body {
+            background-color:lightsteelblue;
+        }
+        #slide {
+            margin: 64px 64px 64px 64px;
+
+            background-color:antiquewhite
+        }
+        .title {
+            border: 2px solid black;
+            width: calc(100% - 0px);
+            height: calc(100% - 128px);
+        }
+            .title > * {
+                margin-left: 64px;
+            }
+            .title > h1 {
+                font-size: 64px;
+            }
+            .title > p {
+                text-align:center;
+            }
+    </style>
+</head>
+<body>
+
+    <div id="slide">
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+    <script type="text/javascript" src="index.js"></script>
+    <template id="slide1">
+        <div class="title">
+            <h1>Title</h1>
+        </div>
+    </template>
+    <template id="slide2">
+        <div class="title">
+            <h1>Slide 2</h1>
+        </div>
+    </template>
+
+    <script type="text/javascript">
+        init()
+    </script>
+</body>
