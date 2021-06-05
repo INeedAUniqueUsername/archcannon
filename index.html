@@ -4,11 +4,24 @@
     <link rel="stylesheet" href="archcannon.css" />
     <style>
 
+
+
+@keyframes raindark {
+    
+    0% { background-color: hsl(180, 50%, 80%); }
+    20% { background-color: hsl(240, 50%, 80%); }
+    40% { background-color: hsl(300, 50%, 80%); }
+    60% { background-color: hsl(360, 50%, 80%); }
+    80% { background-color: hsl(0, 50%, 80%); }
+    100% { background-color: hsl(60, 50%, 80%); }
+}
+
         #logo {
-            animation-name: fadein;
-            animation-duration: 0.8s;
-            animation-timing-function: ease-in;
-            animation-fill-mode: both;
+            animation: fadein 0.8s ease-in both, rainlight 60s ease-in-out both infinite;
+        }
+
+        body {
+            animation: raindark 60s ease-in-out both infinite;
         }
 
         #nav {
@@ -71,8 +84,10 @@
                 <a href="3d.html"><li>- 3D Art</li></a>
                 <a href="digital.html"><li>- Digital Art</li></a>
                 <a href="traditional.html"><li>- Traditional Art</li></a>
+                <!--
                 <a href="music.html"><li>- Music</li></a>
                 <a href="literature.html"><li>- Literature</li></a>
+                -->
                 <a href="websites.html"><li>- Websites</li></a>
             </ul>
         </div>
