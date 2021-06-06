@@ -15,8 +15,8 @@
     20% { background-color: hsl(240, 100%, 90%); }
     40% { background-color: hsl(300, 100%, 90%); }
     60% { background-color: hsl(360, 100%, 90%); }
-    80% { background-color: hsl(0, 100%, 90%); }
-    100% { background-color: hsl(60, 100%, 90%); }
+    80% { background-color: hsl(60, 100%, 90%); }
+    100% { background-color: hsl(120, 100%, 90%); }
 }
 
 #front, body {
@@ -92,6 +92,7 @@ h2 {
     justify-items: center;
     text-align: center;
 
+    margin:0px 0px 0px 0px; padding:0px 0px 0px 0px;
 
 }
 
