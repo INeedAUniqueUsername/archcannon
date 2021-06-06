@@ -10,13 +10,12 @@
 
 
 @keyframes rainlight {
-    
-    00% { background-color: hsl(180, 100%, 90%); }
-    20% { background-color: hsl(240, 100%, 90%); }
-    40% { background-color: hsl(300, 100%, 90%); }
-    60% { background-color: hsl(360, 100%, 90%); }
-    80% { background-color: hsl(60, 100%, 90%); }
-    100% { background-color: hsl(120, 100%, 90%); }
+    00% { background-color: hsl(180, 50%, 90%); }
+    20% { background-color: hsl(252, 50%, 90%); }
+    40% { background-color: hsl(324, 50%, 90%); }
+    60% { background-color: hsl(396, 50%, 90%); }
+    80% { background-color: hsl(468, 50%, 90%); }
+    100% { background-color: hsl(540, 50%, 90%); }
 }
 
 #front, body {
