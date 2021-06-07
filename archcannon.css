@@ -1,21 +1,6 @@
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to {   opacity: 1; }
-}
 * {
     font-family: 'IBM Plex Mono';
-}
-
-
-
-@keyframes rainlight {
-    00% { background-color: hsl(180, 50%, 90%); }
-    20% { background-color: hsl(252, 50%, 90%); }
-    40% { background-color: hsl(324, 50%, 90%); }
-    60% { background-color: hsl(396, 50%, 90%); }
-    80% { background-color: hsl(468, 50%, 90%); }
-    100% { background-color: hsl(540, 50%, 90%); }
 }
 
 #front, body {
@@ -30,21 +15,11 @@
     padding-right:5vw;
     margin-top: 0px;
     margin-bottom:0px;
-
-    animation: rainlight 60s ease-in-out both infinite;
-}
-
-
-.bar {
-    height: 4px;
-    margin: 0px 0px 0px 0px;
-    border: none;
-    background-color: hsl(192, 60%, 50%);
 }
 
 #title {
-    margin: 0px 64px 0px 128px;
-    padding: 0px 0px 0px 0px;
+    margin: 0px 64px 0px 8vw;
+    padding: 0px 0px;
     font-size: 48px;
     font-weight: bold;
 }
@@ -70,8 +45,8 @@ h2 {
 
 
 #itemsDesc {
-    margin-left: 128px;
-    margin-right:256px;
+    padding:16px 0px 64px 0px;
+    margin:0px 16vw 0px 8vw;
     font-size: 32px;
 }
 
@@ -93,6 +68,8 @@ h2 {
 
     margin:0px 0px 0px 0px; padding:0px 0px 0px 0px;
 
+
+    font-size:0px; 
 }
 
     #items > div {
@@ -100,13 +77,14 @@ h2 {
         display: block;
         border: 4px solid black;
         display: inline-block;
-        margin: 0px 0px 0px 0px;
+        margin: 0px 6px;
         padding: 0px 0px 0px 0px;
         vertical-align: top;
         background-color: white;
     }
 
         #items > div > h2 {
+            padding:0px 0px;
             margin: 8px 0px 8px 0px;
             text-align: center;
         }
@@ -115,6 +93,7 @@ h2 {
             width: 100%;
         }
         #items > div > p {
+            padding:0px 0px;
             text-align: left;
             font-size: 24px;
             margin: 8px 0px 8px 12px;
