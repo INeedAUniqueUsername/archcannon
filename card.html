@@ -12,7 +12,9 @@
     <title>Archcannon Art - Card</title>
     <link rel="stylesheet" href="archcannon.css" />
     <style>
-
+p {
+    margin: 0px;
+}
         .border {
 
             border-style:solid;
@@ -25,17 +27,17 @@ a {
 }
         #pane {
             padding:64px 64px;
-            display:inline-block;
+            display:block;
             background-color:rgba(30, 45, 60, 0.6);
             color:rgb(204, 204, 204);
         }
-        #pane > img {
+        #pane img {
             
             width:256px;
             height:256px;
             border: 8px solid rgb(67, 71, 75);
         }
-        #pane > h1 {
+        #pane h1 {
             margin: auto auto auto auto;
             text-align: center;
         }
@@ -44,6 +46,7 @@ a {
             
             margin-top:0px;
             margin-bottom:0px;
+            font-size:24px;
         }
         ul {
             margin-top:8px;
@@ -53,38 +56,49 @@ a {
             margin-bottom: 0px;
             font-size:18px;
         }
+
+        .section {
+            display: inline-block;
+            vertical-align: top;
+        }
     </style>
 </head>
 <body style="background-image:url(Back.png); margin:auto;">
-    <div style="display:block; width:464px; margin:auto auto;">
-
+    <div style="display:block; width:920px; margin:auto auto;">
             <div class="border" style="border-color:rgba(0, 204, 255, 0.3);">
                 <div id="pane">
-                    <img src="Profile.png">
-                    <div style="height:16px"></div>
-                    <h1>Alex Chen</h1>
-                    <p style="text-align: center; margin-top:0px;"><b>They/He</b></p>
-                    <p style="text-align: center; margin-top:0px; font-size:32px; font-variant-caps: small-caps;">free spirit</p>
-                    <div style="height:8px"></div>
-                    <h2>Profiles</h2>
-                    <ul>
-                        <li><a href="https://www.linkedin.com/in/archcannon">LinkedIn</a></li>
-                        <li><a href="https://www.polywork.com/ineedauniquedev">Polywork</a></li>
-                        <li><a href="https://www.github.com/INeedAUniqueUsername">GitHub</a></li>
-                    </ul>
-                    <h2>Contact</h2>
-                    <ul>
-                        <li>achen115@ucr.edu</li>
-                        <li>Archcannon#9998</li>
-                    </ul>
+                    <div class="section" style="margin-right: 64px;">
+                        <img src="Profile.png">
+                        <div style="height:16px"></div>
+                        <h1 style="font-size:32px;">Alex M. Chen</h1>
+                        <p style="text-align: center; margin-top:0px; font-size:24px; "><b>They/He</b></p>  
+                        <p style="text-align: center; margin-top:0px; font-size:32px; font-variant-caps: small-caps;">free spirit</p>  
+                    </div>
 
-                    <h2>Development</h2>
-                    <ul>
-                        <li><a href="https://transcendencerl.github.io">Transcendence Rogue Frontier</a></li>
-                    </ul>
-
-                    <br>
-                    <p style="text-align: center; margin-top:0px; margin-bottom:0px; font-size:16px">Art and code are my own.</p>
+                    <div class="section">
+                        
+                        <h2>Also Known As</h2>
+                        <ul>
+                            <li>INeedAUniqueDev</li>
+                            <li>Archcannon</li>
+                        </ul>
+                        <h2>Profiles</h2>
+                        <ul>
+                            <li><a href="https://www.polywork.com/ineedauniquedev">Polywork</a></li>
+                            <li><a href="https://www.linkedin.com/in/archcannon">LinkedIn</a></li>
+                            <li><a href="https://www.github.com/INeedAUniqueUsername">GitHub</a></li>
+                        </ul>
+                        <h2>Contact</h2>
+                        <ul>
+                            <li>achen115@ucr.edu</li>
+                            <li>Archcannon#9998</li>
+                        </ul>
+                        
+                        <h2>Development</h2>
+                        <ul>
+                            <li><a href="https://transcendencerl.github.io">Transcendence Rogue Frontier</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
     </div>
