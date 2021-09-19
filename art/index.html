@@ -1,0 +1,127 @@
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Archcannon's Art Canon"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://archcannon.art" />
+    <meta property="og:image" content="https://archcannon.art/Archcannon.png" />
+    <meta property="og:description" content="Archive of art by Alex Archcannon Chen" />
+    
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <title>Archcannon Art - Home</title>
+    <link rel="stylesheet" href="archcannon.css" />
+    <style>
+
+        #nav {
+            margin-left: 8vw;
+            width:512px;
+            display: inline-block;
+        }
+
+            #nav ul {
+                margin-top: 0px;
+                padding-left: 0px;
+                font-size: 48px;
+                list-style: none;
+            }
+
+                #nav ul a {
+                    text-decoration: none;
+                }
+
+                #nav ul li:hover {
+                    background-color: lightcyan;
+                }
+
+        #about {
+
+            animation-name: fadein;
+            animation-duration: 0.8s;
+            animation-timing-function: ease-in;
+            animation-fill-mode: both;
+            display: inline-block;
+            vertical-align: top;
+            margin-right:10vw;
+            margin-left:4vw;
+            width:780px;
+        }
+
+            #about > h1 {
+                margin:0px 0px 0px 16px;
+                font-size: 48px;
+            }
+
+            #about > p {
+                margin:16px 16px 16px 16px;
+                font-size: 32px;
+            }
+    </style>
+</head>
+<body style="background-color: white;">
+    <div id="logoBox">
+        <a href="index.html"><img id="logo" src="Archcannon.png"/></a>
+    </div>
+    
+    <div id="front">
+        <div id="titleDiv">
+            <h id="title">Home</h>
+
+            <h id="mode"><a href="https://archcannon.tech">.art</a></h>
+        </div>
+        <div>
+            <div id="nav">
+                <ul>
+                    <a href="writing.html"><li>     ->Writing       </li></a>
+                    <a href="3d.html"><li>          ->3D Art            </li></a>
+                    <a href="digital.html"><li>     ->Digital Art       </li></a>
+                    <a href="traditional.html"><li> ->Traditional Art   </li></a>
+                    <a href="music.html"><li>       ->Music</li></a>
+                </ul>
+            </div>
+    
+            <div id="about">
+                <h1>Alex &#10024;<span id="archcannon">Archcannon</span>&#10024; Chen</h1>
+                <p>Welcome to my complete portfolio page. I enjoy learning about lots of different things. I care about creating art and being unique.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+let archcannon = document.getElementById('archcannon');
+let colored = archcannon.innerText.split('').map((c, i) => { 
+    return `<span style="color: hsl(${i * 240 / 10}, 50%, 40%);">${c}</span>`;
+}).join('');
+//console.log(colored);
+//archcannon.outerHTML = colored;
+
+animate();
+        setInterval(animate, 200);
+        function animate() {
+            window.requestAnimationFrame(recolor);
+        }
+        function recolor() {
+            let logo = document.getElementById('logo');
+            let title = document.getElementById('titleDiv');
+            let body = document.body;
+            let seconds = new Date().getTime() / 1000;
+            let i = Math.round(seconds * 360 / 60)%360;
+            //logo.style.backgroundColor = `hsl(${i},50%,90%)`;
+            title.style.backgroundColor = `hsl(${i},50%,90%)`;
+            body.style.backgroundColor = `hsl(${i},50%,80%)`;
+        }
+
+        /*
+@keyframes raindark {
+    00% { background-color: hsl(180, 50%, 80%); }
+    20% { background-color: hsl(252, 50%, 80%); }
+    40% { background-color: hsl(324, 50%, 80%); }
+    60% { background-color: hsl(396, 50%, 80%); }
+    80% { background-color: hsl(468, 50%, 80%); }
+    100% { background-color: hsl(540, 50%, 80%); }
+}
+        */
+    </script>
+</body>
+</html>

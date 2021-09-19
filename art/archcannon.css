@@ -1,0 +1,125 @@
+* {
+    font-family: 'IBM Plex Mono';
+}
+#front, body {
+    margin:0px 0px 0px 0px;
+}
+#logoBox {
+    padding-top:5vw;
+    background-color: white;
+
+    border-bottom:0px solid black;
+}
+#logo {
+    display: block;
+	
+    width:90vw;
+
+    margin:0vw 5vw 0vw 5vw;
+    padding: 0px 0px 0px 0px;
+}
+
+#title {
+    margin: 0px 64px 0px 8vw;
+    padding: 0px 0px;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+
+
+a:hover {
+    background-color:lightcyan;
+}
+#mode {
+    margin: 0px 8vw 0px 64px;
+    padding: 0px 0px;
+    font-size: 48px;
+    font-weight: bold;
+    float:right;
+}
+#mode:hover {
+    background-color:lightcyan;
+}
+
+h1 {
+    font-size:42px;
+}
+h2 {
+    font-size:30px;
+}
+
+
+#content {
+    margin-left: 128px;
+    padding-bottom:128px;
+}
+#content > p, #items > p {
+    font-size:32px;
+}
+
+    #content li {
+        font-size: 28px;
+    }
+
+
+#itemsDesc {
+    padding:16px 0px 64px 0px;
+    margin:0px 16vw 0px 8vw;
+    font-size: 32px;
+}
+
+.fadein {
+    animation-name: fadein;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+}
+
+
+
+
+
+#items {
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+
+    margin:0px 0px 0px 0px; padding:0px 0px 0px 0px;
+
+
+    font-size:0px; 
+
+    padding-bottom: 128px;
+}
+
+    #items > div {
+        width: 540px;
+        display: block;
+        border: 4px solid black;
+        display: inline-block;
+        margin: 6px 6px;
+        padding: 0px 0px 0px 0px;
+        vertical-align: top;
+        background-color: white;
+    }
+
+        #items > div > h2 {
+            padding:0px 0px;
+            margin: 8px 0px 8px 0px;
+            text-align: center;
+        }
+
+        #items > div > img {
+            width: 100%;
+        }
+        #items > div > p {
+            padding:0px 0px;
+            text-align: left;
+            font-size: 24px;
+            margin: 8px 0px 8px 12px;
+        }
+
+#bottom {
+    height:256px;
+}

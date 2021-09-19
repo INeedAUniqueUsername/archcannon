@@ -3,15 +3,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
 
-    <meta property="og:title" content="Archcannon's Art Canon"/>
+    <meta property="og:title" content="Archcannon's Archeotech"/>
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://archcannon.art" />
-    <meta property="og:image" content="https://archcannon.art/Archcannon.png" />
-    <meta property="og:description" content="Archive of art by Alex Archcannon Chen" />
+    <meta property="og:url" content="https://archcannon.tech" />
+    <meta property="og:image" content="https://archcannon.tech/Archcannon.png" />
+    <meta property="og:description" content="Archive of tech by Alex Archcannon Chen" />
     
     <meta name="twitter:card" content="summary_large_image">
     
-    <title>Archcannon Art - Home</title>
+    <title>Archcannon Tech - Home</title>
     <link rel="stylesheet" href="archcannon.css" />
     <style>
 
@@ -27,14 +27,10 @@
                 font-size: 48px;
                 list-style: none;
             }
-
-                #nav ul a {
-                    text-decoration: none;
-                }
-
                 #nav ul li:hover {
-                    background-color: lightgrey;
+                    background-color:darkslateblue;
                 }
+
 
         #about {
 
@@ -58,9 +54,15 @@
                 margin:16px 16px 16px 16px;
                 font-size: 32px;
             }
+
+            a {
+                
+                text-decoration: none;
+            }
+
     </style>
 </head>
-<body style="background-color: white;">
+<body>
     <div id="logoBox">
         <a href="index.html"><img id="logo" src="Archcannon.png"/></a>
     </div>
@@ -68,15 +70,14 @@
     <div id="front">
         <div id="titleDiv">
             <h id="title">Home</h>
+
+            <h id="mode"><a href="https://archcannon.art">.tech</a></h>
         </div>
-        <div>
+        <div id="infoDiv">
             <div id="nav">
                 <ul>
-                    <a href="writing.html"><li>     ->Writing       </li></a>
-                    <a href="3d.html"><li>          ->3D Art            </li></a>
-                    <a href="digital.html"><li>     ->Digital Art       </li></a>
-                    <a href="traditional.html"><li> ->Traditional Art   </li></a>
-                    <a href="music.html"><li>       ->Music</li></a>
+                    <a href="programming.html"><li>     ->Programming       </li></a>
+                    <a href="websites.html"><li>       ->Websites</li></a>
                 </ul>
             </div>
     
@@ -100,14 +101,12 @@ animate();
             window.requestAnimationFrame(recolor);
         }
         function recolor() {
-            let logo = document.getElementById('logo');
             let title = document.getElementById('titleDiv');
-            let body = document.body;
+            let info = document.getElementById('infoDiv')
             let seconds = new Date().getTime() / 1000;
             let i = Math.round(seconds * 360 / 60)%360;
-            //logo.style.backgroundColor = `hsl(${i},50%,90%)`;
-            title.style.backgroundColor = `hsl(${i},50%,90%)`;
-            body.style.backgroundColor = `hsl(${i},50%,80%)`;
+            title.style.color = `hsl(${i},50%,90%)`;
+            info.style.color = `hsl(${i},50%,80%)`;
         }
 
         /*

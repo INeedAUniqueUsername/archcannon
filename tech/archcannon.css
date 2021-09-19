@@ -4,9 +4,28 @@
 #front, body {
     margin:0px 0px 0px 0px;
 }
+
+
+a:active {
+    color:white;
+}
+a:link {
+    color:unset;
+}
+a:hover, a:hover * {
+    background-color:darkslateblue;
+}
+
+a:focus {
+    color:white;
+}
+a:visited {
+    color:unset;
+}
+
 #logoBox {
     padding-top:5vw;
-    background-color: white;
+    background-color: black;
 
     border-bottom:0px solid black;
 }
@@ -19,12 +38,31 @@
     padding: 0px 0px 0px 0px;
 }
 
+#titleDiv {
+    background-color: hsl(200, 50%, 25%);
+}
+
+#front, body {
+    background-color: hsl(200, 50%, 20%);
+}
+
 #title {
     margin: 0px 64px 0px 8vw;
     padding: 0px 0px;
     font-size: 48px;
     font-weight: bold;
 }
+#mode {
+    margin: 0px 8vw 0px 64px;
+    padding: 0px 0px;
+    font-size: 48px;
+    font-weight: bold;
+    float:right;
+}
+#mode:hover {
+    background-color:darkslateblue;
+}
+
 
 h1 {
     font-size:42px;
