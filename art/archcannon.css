@@ -26,11 +26,23 @@
     font-weight: bold;
 }
 
-
-
-a:hover {
+a:active {
+    color:white;
+}
+a:link {
+    color:unset;
+}
+a:hover, a:hover * {
     background-color:lightcyan;
 }
+a:focus {
+    color:white;
+}
+a:visited {
+    color:unset;
+}
+
+
 #mode {
     margin: 0px 8vw 0px 64px;
     padding: 0px 0px;

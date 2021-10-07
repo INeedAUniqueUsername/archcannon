@@ -44,30 +44,25 @@
                         <img src="digital/Vanity.png" />
                     </div>
                 -->
-                    <div>
-                        <h2>[Archtober] Fantasy</h2>
-                        <img src="digital/Fantasy.png" />
-                    </div>
-                    <div>
-                        <h2>[Archtober] Architect</h2>
-                        <img src="digital/Architect.png" />
-                    </div>
-                    <div>
-                        <h2>[Archtober] Post-war</h2>
-                        <img src="digital/Post-war.png" />
-                    </div>
-                    <div>
-                        <h2>[Archtober] Beak</h2>
-                        <img src="digital/Beak.png" />
-                    </div>
-                    <div>
-                        <h2>[Archtober] Grow</h2>
-                        <img src="digital/Grow.png" />
-                    </div>
-                    <div>
-                        <h2>Change Things Man</h2>
-                        <img src="digital/Change Things Man.png" />
-                    </div>
+                    <script type="text/javascript">
+                        document.currentScript.outerHTML =
+`[Archtober] Fantasy | digital/Fantasy.png
+[Archtober] Architect | digital/Architect.png
+[Archtober] Post-war | digital/Post-war.png
+[Archtober] Beak | digital/Beak.png
+[Archtober] Grow | digital/Grow.png
+Change Things Man | digital/Change Things Man.png
+`.split('\n').map(line => {
+                            let parts = line.split('|')
+                            let title = parts[0].trim();
+                            let src = parts[1].trim();
+                            return
+`<div>
+    <h2>${title}</h2>
+    <img src="${src}" />
+</div>`
+                        });
+                    </script>
                     <div>
                         <h2>CHANGE</h2>
                         <img src="digital/Change.png" />
